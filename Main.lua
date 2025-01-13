@@ -3,7 +3,7 @@ local utility = {}
 
 -- Roblox Services
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local syncData = ReplicatedStorage:WaitForChild("SyncData") or Instance.new("Folder")
+local syncData = ReplicatedStorage:FindFirstChild("SyncData") or Instance.new("Folder")
 syncData.Name = "SyncData"
 syncData.Parent = ReplicatedStorage
 
